@@ -1,2 +1,2 @@
 # Massage_Crypter
-A basic python tool for Encrypting/Decrypting messages
+A basic python tool for encrypting/decrypting messages!
