@@ -45,7 +45,7 @@ def password_decrypt(token: bytes, password: str) -> bytes:
 
 
 # %%  GUI
-layout = [  [sg.Text('Farzad Text Crypter')],[sg.Text('Which one?')], 
+layout = [  [sg.Text('Basic Text Crypter')],[sg.Text('Which one?')], 
             [sg.Button('Encrypt'), sg.Button('Decrypt')]] 
 window = sg.Window('Mode!', layout)
 mode_1, values = window.read()
