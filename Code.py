@@ -12,7 +12,7 @@ from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 
-import PySimpleGUI as sg # pip install pysimplegui
+import PySimpleGUI as sg # pip install PySimpleGUI
 
 backend = default_backend()
 iterations = 100_000
@@ -65,7 +65,7 @@ password=sg.popup_get_text("Password",title=None,default_text="",password_char="
     grab_anywhere=False,keep_on_top=False,location=(None, None),image=None,modal=True)
 
 if password == None:
-    # BUG!: over write the variables here and after window.close() lines
+    # BUG!: over write the variables here and after window.close() lines if you want them not remain in memory
     sys.modules[__name__].__dict__.clear()
     sys.exit("Cancelled")
 
