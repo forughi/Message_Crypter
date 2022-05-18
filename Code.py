@@ -72,7 +72,7 @@ if password == None:
 if mode_1=='Encrypt':
     token=password_encrypt(message.encode(), password)
     layout = [  [sg.Text('Token:')],
-                [sg.Multiline(default_text=token,size=(60, 20))],[sg.Button('Close Window')]]
+                [sg.Multiline(default_text=str(token,'utf-8'),size=(60, 20))],[sg.Button('Close Window')]]
     window = sg.Window('Encrypted Message', layout).Finalize()
     while True:
         event, values = window.read()
